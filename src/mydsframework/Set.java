@@ -18,13 +18,14 @@ public class Set<T> extends SLL<T> {
         boolean notAdd = false;
         hea= this.head;
         while(hea.next!=null) {
-            if(hea.data == x){
+            if (hea.data == x) {
                 notAdd = true;
+                break;
             }
             hea = hea.next;
         }
-        if(notAdd==false )
-        hea.next=e;
+        if(!notAdd)
+            hea.next=e;
     }
 
 
